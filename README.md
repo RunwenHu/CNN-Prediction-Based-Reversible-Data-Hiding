@@ -12,11 +12,7 @@ Guangzhou, China
 
 ## Description:
 
-This version can only calculate the PSNR of images by using the proposed CNN-based predictor (CNNP) with expansion embedding and histogram shifting. 
-
-The working environment is Windows 10, Python 3.7, and MATLAB 2019a. 
-
-The work is based on the paper:
+This version can only calculate the PSNR of images by using the proposed CNN-based predictor (CNNP) with expansion embedding and histogram shifting. The working environment is Windows 10, Python 3.7, and MATLAB 2019a. The work is based on the paper:
 
    R. Hu and S. Xiang, "CNN Prediction Based Reversible Data Hiding," in IEEE Signal Processing Letters, doi: 10.1109/LSP.2021.3059202.
 
