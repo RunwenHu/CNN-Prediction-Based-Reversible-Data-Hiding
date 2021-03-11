@@ -46,12 +46,12 @@ After using this program, the PSNR of the watermarked image by using the propose
 
 ### (1)For histogram shifting:
 
-   #### python main.py -size 512 512 -model '.\model_parameter\model_state.pth' -folder '.\standard_test_images' -mode 'histogram shifting' -length 10000
+   #### python main.py -size 512 512 -model .\model_parameter\model_state.pth -folder .\standard_test_images -mode histogram_shifting -length 10000
 
 
 ### (2)For expansion embedding:
 
-   #### python main.py -size 512 512 -model '.\model_parameter\model_state.pth' -folder '.\standard_test_images' -mode 'expansion embedding' -length 10000
+   #### python main.py -size 512 512 -model .\model_parameter\model_state.pth -folder .\standard_test_images -mode expansion_embedding -length 10000
 
 
 
