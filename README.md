@@ -12,9 +12,9 @@
 
 ## Description:
 
-This version can only calculate the PSNR of images by using the proposed CNN-based predictor (CNNP) with expansion embedding and histogram shifting. The working environment is Windows 10, Python 3.7, Pytorch 1.6.0, and MATLAB 2019a. The work is based on the paper:
+This version can only calculate the PSNR of images by using the proposed CNN-based predictor (CNNP) with expansion embedding and histogram shifting. The working environment is Windows 10, Python 3.7, PyTorch 1.6.0, and MATLAB 2019a. The work is based on the paper:
 
-   #### R. Hu and S. Xiang, "CNN Prediction Based Reversible Data Hiding," in IEEE Signal Processing Letters, doi: 10.1109/LSP.2021.3059202.
+   #### R. Hu and S. Xiang, "CNN Prediction Based Reversible Data Hiding," in IEEE Signal Processing Letters, vol. 28, pp. 464-468, 2021, doi: 10.1109/LSP.2021.3059202.
 
 
 
@@ -32,8 +32,11 @@ This version can only calculate the PSNR of images by using the proposed CNN-bas
 #### python main.py [size] [model] [folder] [length] 
 
    size:                 The size of the images, which is set to 512*512 in this letter.
-   model:             The saved model parameters.
+   
+   model:             The saved model parameters. 
+   
    folder:              The place of the image to be predicted.
+   
    length:             The length of the data to be hidden.
 
 
@@ -43,12 +46,12 @@ After using this program, the PSNR of the watermarked image by using the propose
 
 ### (1)For histogram shifting:
 
-   python main.py -size 512 512 -model '.\model_parameter\model_state.pth' -folder '.\standard_test_images' -mode 'histogram shifting' -length 10000
+   #### python main.py -size 512 512 -model '.\model_parameter\model_state.pth' -folder '.\standard_test_images' -mode 'histogram shifting' -length 10000
 
 
 ### (2)For expansion embedding:
 
-   python main.py -size 512 512 -model '.\model_parameter\model_state.pth' -folder '.\standard_test_images' -mode 'expansion embedding' -length 10000
+   #### python main.py -size 512 512 -model '.\model_parameter\model_state.pth' -folder '.\standard_test_images' -mode 'expansion embedding' -length 10000
 
 
 
